@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<title>Jewellery &#45; Donec ac dolor mollis lectus</title>
+	<link href="css/w3.css" rel="stylesheet" />
+	<link href="css/resets.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+
+    <header>
+	  <section>
+		<img src="img/logo.jpg" width="1024px" height="300px" alt="logo" />
+	  </section>
+	</header>
+
+    <nav>
+	  <ul>
+		<li><a href="#anklet">Anklet</a></li>
+		<li><a href="#bracelet">Bracelet</a></li>
+		<li><a href="#Earrings">Earrings</a></li>
+		<li><a href="#maangtika">Maang Tika</a></li>
+		<li><a href="#necklace">Necklace</a></li>
+		<li><a href="#pendant">Pendant</a></li>
+		<li><a href="#more">More</a></li>
+	  </ul>
+	</nav>
+	
+	<section class="main">
+	  <section class="w3-content w3-display-container" style="width:100%">
+		<img class="mySlides" src="/img/001.jpg" />
+		<img class="mySlides" src="/img/002.jpg" />
+		<img class="mySlides" src="/img/003.jpg" />
+		<div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-middle" style="width:100%">
+		  <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+		  <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+	    </div>
+        <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+		  <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+		  <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+		  <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+		</div>
+	  </section>
+	  <h3 align="center">Special Offers</h3>
+	  <section class="container">
+		<div class="offer-1">
+		  <span>Advertisement</span>
+		</div>
+		<div class="offer-2">
+		  <span>Advertisement</span>
+		</div>
+	  </section>
+	  <section class="container">
+		<div class="offer-3">
+		  <span>Advertisement</span>
+		</div>
+		<div class="offer-4">
+		  <span>Advertisement</span>
+		</div>
+	  </section>
+	  <section class="container">
+		<div class="inner-container">
+		  <a href="#reviews"><img src="img/reviews.png" width="96px" height="96px" alt="reviews" /></a>
+		  <h3>Reviews</h3>
+		  <p>See what others saying about us</p>
+		</div>
+		<div class="inner-container">
+		  <a href="#findstore"><img src="img/find-store.png" width="96px" height="96px" alt="find store" /></a>
+		  <h3>Find Store</h3>
+		  <p>Find our showrooms</p>
+		</div>
+		<div class="inner-container">
+		  <a href="#security"><img src="img/security.png" width="96px" height="96px" alt="security features" /></a>
+		  <h3>Security Features</h3>
+		  <p>Your privacy and security is our responsibility</p>
+		</div>
+	  </section>
+	</section>
+	
+	<footer>
+	  <ul>
+		<li><a href="#faq">Frequently Asked Questions</a></li>
+		<li><a href="#apo">Advanced Payment Options</a></li>
+		<li><a href="#rp">Return Policy</a></li>
+		<li><a href="#join">Login &#45; Sign Up</a></li>
+	  </ul>
+	  <ul class="margeen">
+		<li><img src="/img/facebook.svg" /></li>
+		<li><img src="/img/twitter.svg" /></li>
+		<li><img src="/img/linkedin.svg" /></li>
+	  </ul>
+	  <p>Designed by: Rahul Dey<br />&#169; Jewellery 2017</p>
+	</footer>
+	
+	<script>
+	  var slideIndex = 1;
+      showDivs(slideIndex);
+
+      function plusDivs(n) {
+        showDivs(slideIndex += n);
+      }
+
+      function currentDiv(n) {
+        showDivs(slideIndex = n);
+      }
+
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        if (n > x.length) {
+          slideIndex = 1;
+        }    
+        if (n < 1) {
+          slideIndex = x.length;
+        }
+        for (i = 0; i < x.length; i++) {
+           x[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+           dots[i].className = dots[i].className.replace(" w3-white", "");
+        }
+        x[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " w3-white";
+      }
+	</script>
+
+  </body>
+</html>		
