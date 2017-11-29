@@ -1,0 +1,176 @@
+/*-- Styles for Jewellery.html
+  -- Designed by: Rahul Dey
+  -- E-mail: deyr2752@gmail.com
+  -- Date: Nov 26
+  -- © All Rights Reserved 2017
+  --*/
+
+body
+{
+  font-size: 2em;
+  font-family: sans-serif;
+}
+img {
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+}
+a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+header {
+  text-align: center;
+  width: 100%;
+}
+nav {
+  background-color: #393d40;
+  text-align: center;
+}
+nav li {
+  color: #636363;
+  border-bottom: 1px solid #000;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+nav li:hover, nav li:active {
+  background-color: #636363;
+  color: #d69764;
+  text-decoration: none;
+}
+.main {
+  background-color: #f1edea;
+}
+.main section:first-child {
+  margin-bottom: 25px;
+}
+.container {
+  margin: 25px 15px;
+}
+.container a img:hover, .container a img:active {
+  border: 2px solid #636363;
+}
+h3 {
+  color: #636363;
+  font-size: 200%;
+}
+.offer-1 {
+  background-color: #0050a0;
+}
+.offer-2 {
+  background-color: #e5002b;
+}
+.offer-3 {
+  background-color: #a51890;
+}
+.offer-4 {
+  background-color: #12a8e0;
+}
+.offer-1, .offer-2, .offer-3, .offer-4 {
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  margin: 20px;
+}
+.inner-container {
+  text-align: center;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  background-color: #fff;
+  border: 8px solid #f1edea;
+  border-radius: 3%;
+}
+footer {
+  background-color: #393d40;
+  color: #f1edea;
+  padding: 20px 15px;
+}
+footer ul {
+  text-align: center;
+}
+footer li {
+  padding: 20px 0;
+}
+footer li:hover {
+  background-color: #636363;
+  color: #fff;
+  text-decoration: none;
+}
+footer li:active {
+  color: #fff;
+  text-decoration: none;
+}
+footer p {
+  text-align: right;
+  margin-top: 15px;
+  line-height: 1cm;
+  font-size: 24px;
+}
+
+@media screen and (min-width:46em) {
+  
+  nav {
+	text-align: right;
+	width: 100%;
+  }
+  nav li {
+	display: inline-block;
+	border-left: 1px solid #000;
+	padding: 15px 10px;
+  }
+  nav li:first-child {
+	border-left: none;
+  }
+  nav, .container {
+	font-size: 0.5em;
+  }
+  .container {
+	display: table;
+	width: 100%;
+	margin-left: 0;
+	margin-right: 0;
+  }
+  .offer-1, .offer-2, .offer-3, .offer-4 {
+	display: table-cell;
+	width: 45%;
+	border: 10px solid #f1edea;
+  }
+  .inner-container {
+	display: table-cell;
+	width: 30%;
+  }
+  footer li {
+	display: inline-block;
+	padding: 5px 20px;
+	border-left: 2px solid #000;
+	font-size: 0.6em;
+  }
+  footer li:first-child {
+	border-left: none;
+  }
+  footer a {
+    text-decoration: none;
+  }
+  footer p {
+	font-size: 16px;
+  }
+  .margeen {
+	margin-top: 20px;
+  }
+
+}
+
+@media screen and (min-width: 65em) {
+  
+  nav, .container {
+	font-size: 0.9em;
+  }
+  footer li {
+	font-size: 1em;
+  }
+  footer p {
+	font-size: 24px;
+  }
+  
+}
