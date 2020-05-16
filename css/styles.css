@@ -45,6 +45,9 @@ nav li:hover, nav li:active {
 .main section:first-child {
   margin-bottom: 25px;
 }
+.point {
+  cursor: pointer;
+}
 .container {
   margin: 25px 15px;
 }
